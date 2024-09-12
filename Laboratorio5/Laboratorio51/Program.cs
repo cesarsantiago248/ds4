@@ -1,8 +1,18 @@
-﻿namespace Laboratorio5
+﻿using System;
+
+namespace Laboratorio5
 {
 
-    class Program
+    internal class Program
     {
+
+        //main principal
+        static void Main(string[] args)
+        {
+            Program pv = new Program();
+            pv.Cargar();
+            pv.Imprimir();
+        }
 
         private int[] sueldos; //Declaramos un vector
 
@@ -27,12 +37,6 @@
             }
             Console.ReadKey();
         }
-        //main principal
-        static void Main(string[] args)
-        {
-            PruebaVector1 pv = new PruebaVector1();
-            pv.Cargar();
-            pv.Imprimir();
-        }
+
     }
 }
