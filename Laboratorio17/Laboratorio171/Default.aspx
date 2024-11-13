@@ -11,7 +11,7 @@
                 Runat="Server" />
 
                 <asp:SqlDataSource ID="MyDataSource1" runat="server"
-                    ConnectionString="data source=DESKTOP-DVPK5D7\SQLEXPRESS;initial catalog=Northwind;persist security info=True;Integrated Security=SSPI;"
+                    connectionString="data source=DESKTOP-DVPK5D7\SQLEXPRESS;initial catalog=Northwind;persist security info=True;Integrated Security=SSPI;"
                     ProviderName="System.Data.SqlClient"
                     SelectCommand="SELECT ProductId, ProductName, UnitPrice From Products"
                     UpdateCommand="Update Products Set [ProductName]=@ProductName, [UnitPrice]=@UnitPrice Where [ProductId]=@ProductId">
