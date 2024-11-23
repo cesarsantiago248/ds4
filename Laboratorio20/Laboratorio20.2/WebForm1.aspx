@@ -21,11 +21,26 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Generar Matriz N x N</h2>
-            <label for="txtDimension">Ingrese la dimensión N:</label>
-            <asp:TextBox ID="txtDimension" Width="40"  runat="server" BackColor="LightGray" BorderStyle="None" ></asp:TextBox>
-            <asp:Button ID="btnGenerar" runat="server" Text="Generar" OnClick="btnGenerar_Click"  BackColor="#0066ff" BorderStyle="Groove" Font-Bold="true" ForeColor="White" />
-            <br /><br />
+            <h2>
+                <asp:Label ID="Label1" runat="server" Text="Genera una Matriz N X N"></asp:Label>
+            </h2>
+            <hr />
+            <label for="txtDimension">
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="El número que ingrese a continuación será precentado como una matriz N x N..."></asp:Label>
+            <br />
+            <br />
+            Ingrese el valor de N...</label>
+            <br />
+            <asp:TextBox ID="txtDimension" Width="263px"  runat="server" BackColor="LightGray" BorderStyle="None" OnTextChanged="txtDimension_TextChanged" ></asp:TextBox>
+            <br />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnGenerar" runat="server" Text="Generar" OnClick="btnGenerar_Click"  BackColor="#00FF99" BorderStyle="Groove" Font-Bold="true" ForeColor="#000066" Width="77px" />
+            <br />
+            <br />
+            <br />
             <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red" Font-Bold="true" ></asp:Label>
             <br />
             <asp:PlaceHolder ID="matriz" runat="server" ></asp:PlaceHolder>

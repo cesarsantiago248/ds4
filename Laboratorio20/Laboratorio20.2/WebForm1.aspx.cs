@@ -43,5 +43,10 @@ namespace Laboratorio20._2
                     lblError.Text = "Por favor, ingrese un número entero positivo.";
                 }
         }
+
+        protected System.Void txtDimension_TextChanged(System.Object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
